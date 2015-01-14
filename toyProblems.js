@@ -15,3 +15,51 @@ var finder = function(argument){
 
 finder("Javascript");
 // ----------------------------------------------------------------------------------
+
+// Write a function called combinator that is given two arrays as arguments.
+// The first array is an array of first names, and the second array is an array of last names. 
+// Have the function return a new array combining the first names and the last names.
+var first = ["Tyler", "Ean" ,"Cahlan"];
+var last = ["McGinnis", "Platter", "Sharp"];
+
+var combinator = function(first, last){
+	var firstLast = [];
+	for (var i = 0; i < first.length; i++){
+		firstLast.push(first[i] + " " + last[i]);
+	}
+	return firstLast;
+}
+
+combinator(["Tyler", "Ean", "Cahlan"], ["McGinnis", "Platter", "Sharp"]);
+
+// ------------------------------------------------------------------------------------
+// Make the function invocation work
+
+var cb = function(total){
+	console.log("The total sum of the array is " + total);
+}
+
+var nums = [1, 4, 3, 5, 2, 8];
+
+var sum = function (arr, callback){
+	var total = 0;
+	for(var i = 0; i < arr.length; i++){
+		total += arr[i];
+	}
+	callback(total);
+}
+
+sum(nums, cb);
+
+
+sum([1,4,3,5,2,8], function(total){
+
+
+
+
+
+
+
+
+
+
