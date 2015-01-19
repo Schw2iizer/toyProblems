@@ -73,7 +73,27 @@ var replaceOdd = function(arr){
 replaceOdd(arr);
 
 // --------------------------------------------------------------------------------------------------
-// -------------------------------------------------
+
+// Write a function called Reverse that takes in a string and returns the string reversed. Do not use .reverse() method on the Arrays prototype
+
+var Reverse = function() {
+	var string = "hello world";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
