@@ -74,25 +74,33 @@ replaceOdd(arr);
 
 // --------------------------------------------------------------------------------------------------
 
-// Write a function called Reverse that takes in a string and returns the string reversed. Do not use .reverse() method on the Arrays prototype
-
-var Reverse = function() {
-	var string = "hello world";
+// Write a function called Reverse that takes in a string and returns the string reversed. Do not use .tring.prototype.reverse = function() {
 
 
+ var Reverse = function(str) {
+	var a = str;
+	var b = a.length - 1;
+	var newWord = "";
+	for(var i = b; i >= 0; i--){
+		if (b !== 0) {
+			newWord = newWord + a[i];
+		}
 
+	}
+		return newWord;
+	}
+
+// OR =======
+
+var Reverse = function(str){
+	var o = "";
+	for (var i = str.length - 1; i >= 0; i--){
+		o += str[i];
+	}
+	return o
 }
 
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------------------------------------------------
 
 
 
