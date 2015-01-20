@@ -103,8 +103,18 @@ var Reverse = function(str){
 // ----------------------------------------------------------------------------------------------------------------------
 
 
+// Write a function that returns the factorial of a number. The number 5 will return 5 * 4 * 3 * 2 * 1
+var fact = function(x){
+	n = 5
+	product = n * (n - 1)
 
+	for (i = n - 2; i > 1; i--){
+   product = product * i
+	}
+}
+alert(product);
 
+OR
 
 
 
