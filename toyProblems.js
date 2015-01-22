@@ -134,13 +134,21 @@ for (var i = 0; i < str.length; i++) {
 
 simpleSymbols(str);
 
+// ------------------------------------------------------------------------------------------------------------------------------
 
+// Given an arbitrary input string, return the first non-repeated character in the string. 
+// For example: firstNonRepeatedCharacter("ABA"); // => "B"
+// 			 firstNonRepeatedCharacter("AABCABD"); // =. "C"
 
-
-
-
-
-
-
+function(str) {
+	for(var i = 0; i < str.length; i++){
+		var before = str.slice(0, i);
+		var after = str.slice (i + 1);
+		if(before.indexOF(str[i]) === -1 && after.indexOf(str[i]) === -1) {
+			return str[i];
+		}
+	}
+	return null;
+}
 
 
