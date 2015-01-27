@@ -175,7 +175,23 @@ var fib = [0,1];
 for(var i=fib.length; i<12; i++) {
     fib[i] = fib[i-2] + fib[i-1];
 }
-console.log(fib);  
+console.log(fib); 
+
+OR ---
+
+var fib = function(num){
+	var fibArray = [0,1];
+	for (var i = 0; i < 99; i++){
+		fibArray.push(fibArray[fibArray.length - 1] + fibArray[fibArray.length - 2]);
+	}
+	console.log(fibArray);
+	if(fibArray.indexOf(num) === -1) {
+		return alse;
+	}
+	return true;
+} 
+
+fib(5);
 
 // -----------------------------------------------------------------------------------------------------------------------
 
