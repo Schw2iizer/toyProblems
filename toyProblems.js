@@ -167,11 +167,17 @@ var abCheck = function(str){
 
 ABCheck("lane borrowed");
 
+// ------------------------------------------------------------------------------------------------------------
 
+// Write a function that generates an array of integers of the Fibonacci sequence, up to i = 100. The Fibonacci sequence is defined by: Fn = Fn-1 + Fn-2, which means to find Fn you add the previous two numbers up. The first two numbers in the sequence are 0 and 1. Write a function to check if a given number is in the Fibonacci sequence, return "yes" if it is, if not return the string "no".
+ 
+var fib = [0,1];
+for(var i=fib.length; i<12; i++) {
+    fib[i] = fib[i-2] + fib[i-1];
+}
+console.log(fib);  
 
-
-
-
+// -----------------------------------------------------------------------------------------------------------------------
 
 
 
