@@ -195,5 +195,30 @@ fib(5);
 
 // -----------------------------------------------------------------------------------------------------------------------
 
+// Find the only item that occurs an even number of times in an array. If there is more than one item that occurs an even number of times, just return one of them. If there are no items that occur an even number of times, return null. 
+
+// var onlyEven = evenOccurence([1, 6, 2, 4, 4, 5, 6, 8, 9, 6]);
+// console.log(onlyEven); 4
+
+// var onlyEven = evenOccurence([1, 1, 3, 4, 1,]);
+// console.log(onlyEven); 
+
+
+var evenOccurance = function(arr) {
+  for(var i = 0; i < arr.length; i++) {
+    var occurs = 0; 
+    for(var j = 0; j < arr.length; j++) {
+      if(arr[i] === arr[j]) {
+        occurs++;
+    }
+  }
+  if(occurs %2 === 0) {
+    return arr[i];
+  }
+  }
+}
+evenOccurance([5, 4, 3, 4]);
+// ----------------------------------------------------------------------------------------------------------------
+
 
 
