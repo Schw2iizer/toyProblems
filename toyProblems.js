@@ -220,5 +220,36 @@ var evenOccurance = function(arr) {
 evenOccurance([5, 4, 3, 4]);
 // ----------------------------------------------------------------------------------------------------------------
 
+Write a function that accepts a number, n, and returns the nth Fibonacci number. Use a recursive solution.
+
+var fibonacci = function(n) {
+	var sum = 0;
+	var num1 = 0;
+	var num2 = 1;
+	for(var i = 1; i < n; i++){
+		sum = num1 + num2;
+		num1 = num2;
+		num2 = sum;
+	}
+	return sum;
+}
+fibonacci(6);
+
+
+// RECURSIVE SOLUTION ------>
+
+var recursiveFib = funtion (n){
+	if (n <= 2) {
+		return 1;
+	}
+	return recursiveFib(n - 1) + recursiveFib(n - 2);
+}	
+// ---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
