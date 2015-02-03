@@ -246,9 +246,20 @@ var recursiveFib = funtion (n){
 }	
 // ---------------------------------------------------------------------------------------------------------------
 
+Create a function that takes in three strings as parameters. The goal is to swap all x characters in the string for y characters. For example. swapper("some string", "s, "z") returns "zome ztring".
 
+var swapper = function(str, l, x){
+	var strArray = str.split("");
+	for (var i = 0; i < strArray.length; i++){
+		if (strArray[i] === "l"){
+			strArray[i] = "x";
+		}
+	}
+	var string = strArray.join("");
+	return string;
+}
 
-
+swapper("hello world", "l", "x");
 
 
 
