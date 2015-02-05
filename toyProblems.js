@@ -246,7 +246,7 @@ var recursiveFib = funtion (n){
 }	
 // ---------------------------------------------------------------------------------------------------------------
 
-Create a function that takes in three strings as parameters. The goal is to swap all x characters in the string for y characters. For example. swapper("some string", "s, "z") returns "zome ztring".
+Create a function that takes in three strings as parameters. The goal is to swap all x characters in the string for y characters. For example. swapper("some string", "s, "z") returns "zome ztring
 
 var swapper = function(str, l, x){
 	var strArray = str.split("");
@@ -260,7 +260,38 @@ var swapper = function(str, l, x){
 }
 
 swapper("hello world", "l", "x");
+// ------------------------------------------------------------------------------------------------------------------
 
+// Write a function that accepts a multi dimensional array and returns a flattened version.
 
+// flatten([1, 2, [3, [4], 5, 6], 7]) to [1, 2, 3, 4, 5, 6, 7]
+
+var flatten = function(arr){
+	var str = arr.join('[');
+	var newArray = [];
+	for (var i = 0; i < str.length; i++){
+		if(str[i] !== && str[i] !== ","){
+			newArry.push(+str[i]);
+		}
+
+	}
+	return newArray;
+}
+
+flatten();
+
+// OR
+
+var flatten = function(arr){
+	for (var i = 0; i < arr.length; i++){
+		if (typeof arr[i] !== 'Number'){
+			arr = arr.concat(arr.splice(i, 1)[0]);
+			i--;
+
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------
 
 
