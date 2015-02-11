@@ -336,7 +336,8 @@ var arr = [
 
 // Create a function that can only be invoked once
 
-var once = function() {
+var string = "hello world"
+var once = function(str) {
 	var test = false;
 	return function() {
 		if (!test){
@@ -345,5 +346,7 @@ var once = function() {
 	}
 }
 
+var myFunc = once(string);
+myFunc();
 
 
