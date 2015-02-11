@@ -329,6 +329,21 @@ var arr = [
     'Cowboys': [{name: 'Tony Romo', team: 'Cowboys'}, {name: 'Emmitt Smith', team: 'Cowboys'}],
     'Bears': [{name: 'Dick Butkus', team: 'Bears'}],
     'Raiders': [{name: 'Fred Biletnikoff', team: 'Raiders'}]
+
 }
+
+// -----------------------------------------------------------------------------------------------------
+
+// Create a function that can only be invoked once
+
+var once = function() {
+	var test = false;
+	return function() {
+		if (!test){
+			test = true;
+		}
+	}
+}
+
 
 
