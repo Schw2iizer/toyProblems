@@ -347,6 +347,29 @@ var once = function(str) {
 }
 
 var myFunc = once(string);
-myFunc();
+myFunc("testing");
+
+// ----------------------------------------------------------------------------------------------------------------------
+
+// Make the following code work.
+// var counter = getCounter();
+// counter(); //2
+// counter(); //4 and so on
+
+
+var getCounter = function(counter){
+	var counter = 0;
+	return function(){
+		counter+=2;
+		return counter;
+	}
+
+}
+
+var counter = getCounter();
+counter();
+
+
+
 
 
