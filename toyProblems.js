@@ -369,7 +369,25 @@ var getCounter = function(counter){
 var counter = getCounter();
 counter();
 
+// --------------------------------------------------------------------------------------------
 
+// Triangle had n number of rows. Each row has one less block than the row below it. Create a function that takes n and calculates the total number of blocks in a triangle.
+// example: Triangle with 3 rows
+		*
+	*		*
+*		*		*
 
+// function returns 6
+
+function triangleCounter(n){
+	var total = 0;
+	var stars = "*";
+	for (var i = 0; i < n + 1; i++){
+		total += i;
+		console.log(stars);
+		console.log(stars = stars.concat(" *");
+	}
+	return total;
+}
 
 
