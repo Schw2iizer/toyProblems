@@ -390,4 +390,23 @@ function triangleCounter(n){
 	return total;
 }
 
+// ------------------------------------------------------------------------------------------------------------------
+
+// Write a function that takes a string as an argument and determines whether or not the given string is a palindrome.
+
+var palindrome = function(string){
+	var str = str.split("").reverse().join(");
+	if (string === str) {
+		console.log(true);
+	}
+	else {
+		console.log(false);
+	}
+
+palindrome(abcba);
+
+
+
+
+
 
